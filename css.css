@@ -1,0 +1,67 @@
+*{
+    font-family: system-ui;
+    
+    
+    
+    }
+    .hed {
+    
+        margin: auto;
+    width: 60%;
+    padding: 10%;
+    display: flex;
+    
+    }
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(74, 74, 248);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+  } 
+  .cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* المسافة بين الكروت */
+  }
+  
+  .card {
+    background-color: rgb(255, 255, 255);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 2px;
+    position: relative; /* مهم لتفعيل `::before` */
+    overflow: hidden; /* لإخفاء أي عناصر خارج الحدود */
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+  }
+  
+ 
+  .iii {
+    width: 100%; /* الصورة تملأ عرض الكارت */
+    height: auto; /* الحفاظ على نسبة الأبعاد */
+  }
+  
+  .infi {
+    text-align: center;
+  }
+  
+  .infi h3 {
+    color: rgb(74, 74, 248);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+      h3 { font-size: 75px; animation: changeColor 2s infinite; /* الأنيميشن بيتكرر كل 5 ثواني */ } 
+      @keyframes changeColor { 0% { color: rgb(1, 11, 26); } 25% { color: blue; } 50% { color: rgb(0, 195, 255); } 75% { color: rgb(23, 6, 124); } 100% { color: rgb(0, 217, 255); } }
